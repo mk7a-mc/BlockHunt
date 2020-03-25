@@ -1,0 +1,19 @@
+name: BlockHunt
+version: ${project.version}
+main: com.mk7a.blockhunt.BlockHuntPlugin
+api-version: '1.15'
+authors: [mk7a]
+website: mk7a.com
+commands:
+  blockhunt:
+    description: main command
+    permission: blockhunt.cmd
+    usage: /blockhunt help
+    aliases: [bh]
+permissions:
+  blockhunt.cmd:
+    description: access to blockhunt command
+    default: op
+  blockhunt.collect:
+    description: allow collecting blockhunt prize
+    default: true
